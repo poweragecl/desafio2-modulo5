@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+  margin: 23px 0 18px 0;
+}
+
+.main-menu{
+  background-color: #018E46;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 16px;
+}
+
+.main-menu .item-menu{
+  color: #fff;
+  text-decoration: none;
+}
+
+.gallery{
+  column-count: 3; 
+  column-gap: 16px; 
+  padding: 16px;
+}
+
+.card-item{
+  width: 100%;
+  break-inside: avoid-column; 
+  margin-bottom: 16px; 
+  box-shadow: 0 0 12px rgba(0,0,0,.12);
+  position: relative;
+}
+
+.card-info{
+  padding: 14px;
+}
+
+.card-item img{
+    width:100%;
+}
+
+.heart-button{
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  opacity: .7;
+  transition: .3s;
+}
+
+.heart-button:hover{
+  opacity: 1;
+}
+
+.card-item.liked .heart-button{
+  opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+
